@@ -1,0 +1,13 @@
+name: "Setup promtool"
+description: "Installs promtool via GitHub Actions."
+author: "Arthur Sens"
+branding:
+  icon: "terminal"
+  color: "purple"
+inputs:
+  version:
+    description: "Version of promtool that should be installed. Default to 'latest'."
+    required: false
+runs:
+  using: "docker"
+  image: "./Dockerfile"
